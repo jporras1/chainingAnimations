@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setBackground(as: .yellow)
+        
     }
 
 
 }
 
+extension UIViewController{
+    func setBackground(as color: UIColor){
+        self.view.backgroundColor = color
+    }
+}
